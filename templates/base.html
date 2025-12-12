@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+  <style>
+    nav { padding: 12px 0; border-bottom: 1px solid #ddd; margin-bottom: 16px; }
+    nav a { margin-right: 12px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 880px; margin: 0 auto; padding: 0 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      {% for item in config.extra.nav %}
+        <a href="{{ item.url }}">{{ item.name_en }}</a>
+      {% endfor %}
+    </nav>
+
+    {% block content %}{% endblock content %}
+  </main>
+</body>
+</html>
