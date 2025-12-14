@@ -10,7 +10,15 @@ build_search_index = false
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
+highlight_code = false
 
 [extra]
 # Put all your custom variables here
+nav = [
+  { url = "/", name_en = "home" },
+  { url = "/scope/", name_en = "scope" },
+  { url = "/examples/", name_en = "examples" },
+  { url = "/refs/", name_en = "refs" },
+  { url = "/posts/", name_en = "posts" },
+  { url = "/contact/", name_en = "contact" },
+]
