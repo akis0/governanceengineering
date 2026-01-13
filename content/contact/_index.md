@@ -8,4 +8,4 @@ weight = 50
 
 指摘・議論・相談などはこちら。
 
-- 連絡先：hi@gvnce-eng.jp
+- 連絡先：hi[at]gvnce-eng.jp
